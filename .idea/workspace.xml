@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
+=======
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+>>>>>>> origin/main
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="4749337f-28bc-4808-9a27-be2c83602fbe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
+=======
+    <list default="true" id="fe49a2d8-d4ba-4fb7-8b38-d23dd86ce26c" name="Changes" comment="2026-01-28" />
+>>>>>>> origin/main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -25,14 +38,44 @@
     </system>
   </component>
   <component name="Git.Settings">
+=======
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\chodong\.android\avd\Copy_of_Pixel_4_XL_API_33.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="claude/chodong1" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="claude/cho" />
+      </map>
+    </option>
+>>>>>>> origin/main
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="38t833INkHlunvAYH3Cs25Gfprc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+=======
+  <component name="ProjectId" id="38gR2MhMkive7vdclgmgfaCPWDU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+>>>>>>> origin/main
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
@@ -40,9 +83,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+<<<<<<< HEAD
     "cidr.known.project.marker": "true"
   }
 }]]></component>
+=======
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/chodong/Desktop/server_android_source/test/test",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chodong\Desktop\server_android_source\test\test\app\src\main\res\layout" />
+      <recent name="C:\Users\chodong\Desktop\server_android_source\test\test\app\src\main\java\com\transitcard\reader" />
+      <recent name="C:\Users\chodong\Desktop\server_android_source\test\test\app\src\main\res\drawable" />
+      <recent name="C:\Users\chodong\Desktop\server_android_source\test\test\app\src\main\res" />
+    </key>
+  </component>
+>>>>>>> origin/main
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Transit_Card_Reader.app.main" />
@@ -106,12 +165,19 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+<<<<<<< HEAD
       <method v="2" />
+=======
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+>>>>>>> origin/main
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="4749337f-28bc-4808-9a27-be2c83602fbe" name="Changes" comment="" />
       <created>1769607303549</created>
       <option name="number" value="Default" />
@@ -120,4 +186,47 @@
     </task>
     <servers />
   </component>
+=======
+      <changelist id="fe49a2d8-d4ba-4fb7-8b38-d23dd86ce26c" name="Changes" comment="" />
+      <created>1769219019893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1769219019893</updated>
+    </task>
+    <task id="LOCAL-00001" summary="2026-01-28">
+      <created>1769561366669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769561366669</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2026-01-28">
+      <created>1769561546009</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1769561546009</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2026-01-28">
+      <created>1769591945214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769591945214</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2026-01-28">
+      <created>1769607259234</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769607259234</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2026-01-28" />
+    <option name="LAST_COMMIT_MESSAGE" value="2026-01-28" />
+  </component>
+>>>>>>> origin/main
 </project>

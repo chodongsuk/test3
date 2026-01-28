@@ -37,7 +37,11 @@
     <content url="file://$MODULE_DIR$/../../../app/build/generated/res/resValues/androidTest/debug" />
     <content url="file://$MODULE_DIR$/../../../app/src/androidTest" />
     <content url="file://$MODULE_DIR$/../../../app/src/androidTestDebug" />
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
+=======
+    <orderEntry type="jdk" jdkName="Android API 34 Platform" jdkType="Android SDK" />
+>>>>>>> origin/main
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Transit_Card_Reader.app.main" scope="TEST" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.ext:junit:1.1.5@aar" level="project" />
