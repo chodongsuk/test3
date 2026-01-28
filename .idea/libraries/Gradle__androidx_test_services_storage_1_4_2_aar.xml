@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.test.services:storage:1.4.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/caae21356fc6c41244a0ff9b1dcf0f73/transformed/storage-1.4.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/caae21356fc6c41244a0ff9b1dcf0f73/transformed/storage-1.4.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/41e24016876cd5cd867e944cdb6ba22d/transformed/storage-1.4.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/41e24016876cd5cd867e944cdb6ba22d/transformed/storage-1.4.2/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.test.services/storage/1.4.2/edb6438b0e7e21c66b22184eebdb13cd5167161a/storage-1.4.2-javadoc.jar!/" />
