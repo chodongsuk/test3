@@ -46,26 +46,4 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    // Room Database
-    def room_version = "2.5.2"
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
-
-    // ViewPager2
-    implementation "androidx.viewpager2:viewpager2:1.0.0"
-
-    // Material Components (TabLayout 포함)
-    implementation 'com.google.android.material:material:1.9.0'
-
-    // CardView
-    implementation "androidx.cardview:cardview:1.0.0"
-
-    // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-livedata:2.6.1"
-    implementation "androidx.lifecycle:lifecycle-viewmodel:2.6.1"
-    implementation "androidx.lifecycle:lifecycle-runtime:2.6.1"
-
-    // CoordinatorLayout
-    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
-    implementation "com.google.android.material:material:1.12.0"
 }
