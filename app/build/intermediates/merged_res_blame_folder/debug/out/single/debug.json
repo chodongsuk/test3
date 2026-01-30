@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/layout_activity_main.xml.flat",
+        "source": "com.transitcard.reader.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/xml_nfc_tech_filter.xml.flat",
+        "source": "com.transitcard.reader.app-main-39:/xml/nfc_tech_filter.xml"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.transitcard.reader.app-main-39:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/mipmap-xxxhdpi_icon.png.flat",
+        "source": "com.transitcard.reader.app-main-39:/mipmap-xxxhdpi/icon.png"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.transitcard.reader.app-main-39:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/layout_item_card_page.xml.flat",
+        "source": "com.transitcard.reader.app-main-39:/layout/item_card_page.xml"
+    },
+    {
+        "merged": "com.transitcard.reader.app-merged_res-37:/layout_item_transaction.xml.flat",
+        "source": "com.transitcard.reader.app-main-39:/layout/item_transaction.xml"
+    }
+]
