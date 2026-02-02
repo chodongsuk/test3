@@ -14,6 +14,9 @@ public class NFCReader {
     private static final byte[] EZL_AID_IN_FCI = {
             (byte) 0xD4, 0x10, 0x00, 0x00, 0x14, 0x00, 0x01
     };
+    private static final byte[] RAILPLUS_AID_IN_FCI = {
+            (byte) 0xD4, 0x10, 0x00, 0x00, 0x29, 0x00, 0x00, 0x01
+    };
 
     // FCI 응답 저장용 (카드 구분에 사용)
     private byte[] lastFciResponse = null;
@@ -86,6 +89,10 @@ public class NFCReader {
                     Log.d(TAG, "Using HipassParser with primary FCI");
                     result = new HipassParser().parse(isoDep, cardId, lastFciResponse);
                     break;
+                case RAILPLUS:
+                    Log.d(TAG, "Using RailplusParser with primary FCI");
+                    result = new RailplusParser().parse(isoDep, cardId, lastFciResponse);
+                    break;
                 default:
                     Log.w(TAG, "Unsupported card type: " + cardType);
                     isoDep.close();
@@ -130,22 +137,26 @@ public class NFCReader {
             return CardType.TMONEY;
         }
 
-        // 2. KFTC AID 시도 (EZL 또는 하이패스)
+        // 2. KFTC AID 시도 (EZL, 하이패스, 레일플러스)
         byte[] kftcAid = {(byte) 0xA0, 0x00, 0x00, 0x04, 0x52, 0x00, 0x01};
         if (trySelectAID(isoDep, kftcAid, "KFTC")) {
-            // FCI 응답을 분석하여 하이패스와 EZL 구분
+            // FCI 응답을 분석하여 카드 종류 구분
             if (lastFciResponse != null) {
                 if (containsAid(lastFciResponse, HIPASS_AID_IN_FCI)) {
                     Log.i(TAG, "✓ Detected as HIPASS (AID: A0000002450001)");
                     return CardType.HIPASS;
+                } else if (containsAid(lastFciResponse, RAILPLUS_AID_IN_FCI)) {
+                    Log.i(TAG, "✓ Detected as RAILPLUS (AID: D4100000290000001)");
+                    return CardType.RAILPLUS;
                 } else if (containsAid(lastFciResponse, EZL_AID_IN_FCI)) {
                     Log.i(TAG, "✓ Detected as EZL (AID: D4100000140001)");
                     return CardType.EZL;
                 }
+                return CardType.UNKNOWN;
             }
             // FCI 분석 실패시 기본적으로 EZL로 간주
-            Log.w(TAG, "Cannot distinguish HIPASS/EZL from FCI, defaulting to EZL");
-            return CardType.EZL;
+            Log.w(TAG, "Cannot distinguish HIPASS/RAILPLUS/EZL from FCI, defaulting to EZL");
+            return CardType.UNKNOWN;
         }
 
         // 3. 추가 EZL AID 시도

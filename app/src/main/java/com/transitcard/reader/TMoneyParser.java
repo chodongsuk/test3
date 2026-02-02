@@ -98,7 +98,7 @@ public class TMoneyParser implements CardParser {
                 byte[] response = isoDep.transceive(cmd);
 
                 String hexResponse = bytesToHex(response);
-                Log.i("TEST2", hexResponse);
+                Log.i(TAG, hexResponse);
 
                 Transaction tx = parseBalanceRecord(response);
 

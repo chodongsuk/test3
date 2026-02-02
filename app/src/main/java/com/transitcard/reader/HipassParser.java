@@ -45,21 +45,6 @@ public class HipassParser implements CardParser {
             // 2. Secondary AID 선택 (잔액/거래내역 읽기 필요)
             selectSecondaryAid(isoDep);
 
-            // 3. Secondary AID 응답에서 카드번호 추출 시도
-            if (cardNumber == null) {
-                cardNumber = readCardNumberFromSecondaryAid();
-            }
-
-            // 4. CARDINFO 명령으로 시도
-            if (cardNumber == null) {
-                cardNumber = readCardNumberFromCardInfo(isoDep);
-            }
-
-            // 5. 최종적으로 Card ID 사용
-            if (cardNumber == null) {
-                cardNumber = bytesToHex(cardId);
-                Log.w(TAG, "Using Card ID as card number");
-            }
 
             // 잔액 및 거래내역 읽기
             int balance = readBalance(isoDep);
@@ -179,6 +164,10 @@ public class HipassParser implements CardParser {
                     byte[] cmd = {0x00, (byte) 0xB2, (byte) record, sfi, LE_RECORD};
                     byte[] response = isoDep.transceive(cmd);
 
+                    String hexResponse = bytesToHex(response);
+                    Log.i(TAG, hexResponse);
+
+
                     Transaction tx = parseTransactionRecord(response);
 
                     if (tx != null) {
@@ -249,7 +238,7 @@ public class HipassParser implements CardParser {
             } else {
                 // 사용으로 추정 (실제 확인 필요)
                 txType = TransactionType.USE;
-                location = "하이패스";
+                location = "사용";
             }
 
             Log.i(TAG, location + " | " + amount + "원 | 잔액: " + balance + "원");

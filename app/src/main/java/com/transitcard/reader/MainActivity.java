@@ -255,17 +255,17 @@ public class MainActivity extends AppCompatActivity {
     private void saveOrUpdateCard(TransitCardData cardData) {
         new Thread(() -> {
             try {
-//                CardEntity existingCard = cardDao.getCardByNumber(cardData.getCardNumber());
-//
-//                if (existingCard != null) {
-//                    // 기존 카드 업데이트
-//                    updateCard(existingCard, cardData);
-//                } else {
-//                    // 새 카드 추가
-//                    insertCard(cardData);
-//                }
+                CardEntity existingCard = cardDao.getCardByNumber(cardData.getCardNumber());
 
-                insertCard(cardData);
+                if (existingCard != null) {
+                    // 기존 카드 업데이트
+                    updateCard(existingCard, cardData);
+                } else {
+                    // 새 카드 추가
+                    insertCard(cardData);
+                }
+
+                //insertCard(cardData);
             } catch (Exception e) {
                 Log.e(TAG, "카드 저장 오류", e);
                 runOnUiThread(() ->

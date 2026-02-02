@@ -158,7 +158,8 @@ public class EZLParser implements CardParser {
                 byte[] cmd = {0x00, (byte) 0xB2, (byte) record, P2_BALANCE_RECORD, LE_RECORD};
                 byte[] response = isoDep.transceive(cmd);
 
-                Log.i(TAG, "SFI4 Record " + record + ": " + bytesToHex(response));
+                String hexResponse = bytesToHex(response);
+                Log.i(TAG, hexResponse);
 
                 Transaction tx = parseBalanceRecord(response);
 
